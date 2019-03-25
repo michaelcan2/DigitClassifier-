@@ -4,6 +4,9 @@ from sagemaker import get_execution_role
 from sagemaker.amazon.amazon_estimator import get_image_uri
 import boto3
 import botocore
+import warnings
+warnings.filterwarnings('ignore')
+
 
 '''
 Gets data from s3 bucket
